@@ -1,0 +1,602 @@
+[
+ {
+  "n": 1,
+  "file": "01_Vertical_vs_Horizontal_Scaling.mp4",
+  "when": "2026-11-05T13:30:00.000Z",
+  "caption": "System Design #01: Vertical vs Horizontal Scaling\n\nTwo ways to handle more load and when to use each.\n\n• Vertical: simple, but capped and fragile\n• Horizontal: near-limitless and fault tolerant\n• Horizontal needs stateless services\n• Start vertical, scale out when you must\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 2,
+  "file": "02_Latency_vs_Throughput.mp4",
+  "when": "2026-11-07T13:30:00.000Z",
+  "caption": "System Design #02: Latency vs Throughput\n\nThe two numbers that define “fast”.\n\n• Latency = time for one request\n• Throughput = requests per second\n• They often trade off: batching & queues\n• Watch p99, not just the average\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 3,
+  "file": "03_Availability_the_Nines.mp4",
+  "when": "2026-11-09T13:30:00.000Z",
+  "caption": "System Design #03: Availability & the Nines\n\nHow “always up” is actually measured.\n\n• Each nine = 10× less downtime\n• SLI measures, SLO targets, SLA promises\n• Serial dependencies multiply failure\n• Redundancy in parallel adds nines\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 4,
+  "file": "04_CAP_Theorem.mp4",
+  "when": "2026-11-11T13:30:00.000Z",
+  "caption": "System Design #04: CAP Theorem\n\nWhy distributed databases must make a choice.\n\n• Partitions will happen: P is mandatory\n• CP: errors rather than stale data\n• AP: stale data rather than errors\n• No partition? See PACELC (next)\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 5,
+  "file": "05_PACELC_Theorem.mp4",
+  "when": "2026-11-13T13:30:00.000Z",
+  "caption": "System Design #05: PACELC Theorem\n\nCAP’s missing half: the everyday trade-off.\n\n• PAC = CAP during a partition\n• ELC = the everyday trade-off\n• Strong consistency always costs latency\n• Choose per use case, even per query\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 6,
+  "file": "06_Consistency_Models.mp4",
+  "when": "2026-11-15T13:30:00.000Z",
+  "caption": "System Design #06: Consistency Models\n\nWhat a read is allowed to return.\n\n• Consistency is a spectrum, not on/off\n• Stronger = slower and less available\n• Eventual is fine for most counters & feeds\n• Users notice missing read-your-writes first\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 7,
+  "file": "07_Back_of_the_Envelope_Estimation.mp4",
+  "when": "2026-11-17T13:30:00.000Z",
+  "caption": "System Design #07: Back-of-the-Envelope Estimation\n\nSize a system in 2 minutes, without a calculator.\n\n• 1 day ≈ 10⁵ seconds\n• Estimate QPS → storage → bandwidth → servers\n• Be roughly right, fast\n• Find the bottleneck: that’s the point\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 8,
+  "file": "08_Stateless_vs_Stateful_Services.mp4",
+  "when": "2026-11-19T13:30:00.000Z",
+  "caption": "System Design #08: Stateless vs Stateful Services\n\nThe secret to scaling out painlessly.\n\n• Stateless servers scale horizontally with ease\n• Push state to DBs, caches or tokens\n• Sticky sessions are a band-aid\n• Keep stateful parts few and well-replicated\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 9,
+  "file": "09_Monolith_vs_Microservices.mp4",
+  "when": "2026-11-21T13:30:00.000Z",
+  "caption": "System Design #09: Monolith vs Microservices\n\nOne big app, or many small ones?.\n\n• Monolith: simple, fast, one deploy\n• Microservices: independent scaling & teams\n• You pay in network & operational complexity\n• Split when the pain is real, not before\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 10,
+  "file": "10_Single_Points_of_Failure.mp4",
+  "when": "2026-11-23T13:30:00.000Z",
+  "caption": "System Design #10: Single Points of Failure\n\nFind the one thing that can take you down.\n\n• Walk every request path: what if this dies?\n• Redundancy + automatic failover\n• Check people, certs & vendors too\n• Prove it with failure testing\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 11,
+  "file": "11_Client_Server_vs_Peer_to_Peer.mp4",
+  "when": "2026-11-25T13:30:00.000Z",
+  "caption": "System Design #11: Client-Server vs Peer-to-Peer\n\nWho does the work: one center, or everyone?.\n\n• Client-server: simple, controllable, central\n• P2P: scales with users, no center\n• P2P pays in NAT, discovery & trust\n• Real systems often mix both\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 12,
+  "file": "12_Functional_vs_Non_Functional_Requirements.mp4",
+  "when": "2026-11-27T13:30:00.000Z",
+  "caption": "System Design #12: Functional vs Non-Functional Requirements\n\nWhat to ask before you draw a single box.\n\n• Functional = features (what)\n• Non-functional = qualities (how well)\n• Put numbers on every quality\n• Agree on what’s out of scope\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 13,
+  "file": "13_How_DNS_Works.mp4",
+  "when": "2026-11-29T13:30:00.000Z",
+  "caption": "System Design #13: How DNS Works\n\nTurning names into IP addresses in milliseconds.\n\n• Resolver → root → TLD → authoritative\n• Caching makes most lookups instant\n• TTL decides how fast changes spread\n• DNS can route, balance and fail over\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 14,
+  "file": "14_TCP_vs_UDP.mp4",
+  "when": "2026-12-01T13:30:00.000Z",
+  "caption": "System Design #14: TCP vs UDP\n\nReliable delivery, or raw speed?.\n\n• TCP: reliable, ordered, connection-based\n• UDP: fast, simple, no guarantees\n• TCP’s reliability costs latency\n• Real-time apps often pick UDP (or QUIC)\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 15,
+  "file": "15_HTTP_1_1_vs_HTTP_2_vs_HTTP_3.mp4",
+  "when": "2026-12-03T13:30:00.000Z",
+  "caption": "System Design #15: HTTP/1.1 vs HTTP/2 vs HTTP/3\n\nHow the web’s protocol keeps getting faster.\n\n• 1.1: one request per connection at a time\n• 2: multiplexing over a single TCP connection\n• 3: QUIC over UDP, no TCP head-of-line blocking\n• Enable HTTP/2 and HTTP/3 at your CDN or proxy\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 16,
+  "file": "16_REST_vs_GraphQL_vs_gRPC.mp4",
+  "when": "2026-12-05T13:30:00.000Z",
+  "caption": "System Design #16: REST vs GraphQL vs gRPC\n\nThree ways for software to talk.\n\n• REST: simple, cacheable, universal\n• GraphQL: flexible queries, fewer round trips\n• gRPC: fast, typed, streaming\n• Mix them: each layer has a best fit\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 17,
+  "file": "17_WebSockets_SSE_Long_Polling.mp4",
+  "when": "2026-12-07T13:30:00.000Z",
+  "caption": "System Design #17: WebSockets, SSE & Long Polling\n\nHow servers push data in real time.\n\n• Polling: simple but wasteful\n• SSE: easy one-way streaming over HTTP\n• WebSocket: full two-way, real time\n• Plan for connection state at scale\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 18,
+  "file": "18_Load_Balancers_L4_vs_L7.mp4",
+  "when": "2026-12-09T13:30:00.000Z",
+  "caption": "System Design #18: Load Balancers: L4 vs L7\n\nWhat your load balancer can actually see.\n\n• L4: fast, protocol-agnostic, connection-level\n• L7: smart, HTTP-aware, request-level\n• L7 enables canaries, path routing, TLS offload\n• Many architectures use both\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 19,
+  "file": "19_Load_Balancing_Algorithms.mp4",
+  "when": "2026-12-11T13:30:00.000Z",
+  "caption": "System Design #19: Load Balancing Algorithms\n\nWhich server gets the next request?.\n\n• Round robin: the simple default\n• Least connections: for uneven work\n• Hashing: for stickiness and caches\n• Power of two: cheap and surprisingly good\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 20,
+  "file": "20_Reverse_Proxy_vs_Forward_Proxy.mp4",
+  "when": "2026-12-13T13:30:00.000Z",
+  "caption": "System Design #20: Reverse Proxy vs Forward Proxy\n\nSame middleman, opposite sides.\n\n• Forward proxy: speaks for clients\n• Reverse proxy: speaks for servers\n• Reverse proxies power LBs, CDNs, gateways\n• Ask: who configured it, and who does it hide?\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 21,
+  "file": "21_API_Gateway.mp4",
+  "when": "2026-12-15T13:30:00.000Z",
+  "caption": "System Design #21: API Gateway\n\nOne front door for all your services.\n\n• One front door for many services\n• Centralizes auth, limits, routing\n• Aggregates calls for chatty clients\n• Keep it thin, and highly available\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 22,
+  "file": "22_Content_Delivery_Networks.mp4",
+  "when": "2026-12-17T13:30:00.000Z",
+  "caption": "System Design #22: Content Delivery Networks\n\nPutting your content next to your users.\n\n• CDNs cache content near users\n• Miss → fetch from origin; hit → fast\n• Cache-Control headers set the rules\n• Version static files, keep HTML short-lived\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 23,
+  "file": "23_Service_Discovery.mp4",
+  "when": "2026-12-19T13:30:00.000Z",
+  "caption": "System Design #23: Service Discovery\n\nHow services find each other when IPs keep changing.\n\n• Instances register; callers look up\n• Heartbeats remove dead instances\n• Client-side vs server-side discovery\n• In Kubernetes: Services + DNS\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 24,
+  "file": "24_Service_Mesh.mp4",
+  "when": "2026-12-21T13:30:00.000Z",
+  "caption": "System Design #24: Service Mesh\n\nNetworking superpowers without touching code.\n\n• Sidecar proxies handle service traffic\n• Control plane configures them all\n• mTLS, retries, canaries, metrics for free\n• Costs: latency, memory, complexity\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 25,
+  "file": "25_SQL_vs_NoSQL.mp4",
+  "when": "2026-12-23T13:30:00.000Z",
+  "caption": "System Design #25: SQL vs NoSQL\n\nChoosing the right kind of database.\n\n• SQL: structure, joins, transactions\n• NoSQL: scale and flexibility\n• Model NoSQL around your queries\n• Many systems use both (polyglot persistence)\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 26,
+  "file": "26_ACID_vs_BASE.mp4",
+  "when": "2026-12-25T13:30:00.000Z",
+  "caption": "System Design #26: ACID vs BASE\n\nTwo philosophies of data correctness.\n\n• ACID: correct, every time\n• BASE: available, eventually correct\n• WAL makes durability possible\n• Match the model to the cost of being wrong\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 27,
+  "file": "27_Database_Indexing_B_Trees_LSM_Trees.mp4",
+  "when": "2026-12-27T13:30:00.000Z",
+  "caption": "System Design #27: Database Indexing: B-Trees & LSM Trees\n\nWhy one index turns seconds into milliseconds.\n\n• Indexes turn O(n) scans into O(log n) lookups\n• B-trees: balanced, read- and range-friendly\n• LSM trees: write-optimized, compaction\n• Index what you query, nothing more\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 28,
+  "file": "28_Normalization_vs_Denormalization.mp4",
+  "when": "2026-12-29T13:30:00.000Z",
+  "caption": "System Design #28: Normalization vs Denormalization\n\nStore each fact once, or copy it for speed?.\n\n• Normalize by default: correctness first\n• Denormalize hot read paths deliberately\n• Every copy is a consistency obligation\n• Let the database maintain copies when it can\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 29,
+  "file": "29_Database_Replication.mp4",
+  "when": "2026-12-31T13:30:00.000Z",
+  "caption": "System Design #29: Database Replication\n\nKeeping copies of your data in sync.\n\n• Single-leader: simple, no write conflicts\n• Multi-leader: local writes, needs conflict handling\n• Leaderless: quorums, highly available\n• Sync = safe but slow; async = fast but lossy\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 30,
+  "file": "30_Sharding_Partitioning.mp4",
+  "when": "2027-01-02T13:30:00.000Z",
+  "caption": "System Design #30: Sharding & Partitioning\n\nSplitting data that no longer fits on one machine.\n\n• Sharding scales data and writes horizontally\n• The shard key is the most important decision\n• Cross-shard queries are expensive\n• Plan for resharding from day one\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 31,
+  "file": "31_Consistent_Hashing.mp4",
+  "when": "2027-01-04T13:30:00.000Z",
+  "caption": "System Design #31: Consistent Hashing\n\nAdd or remove servers without reshuffling everything.\n\n• Servers and keys share one hash ring\n• Keys go to the next server clockwise\n• Membership changes move ~1/N of keys\n• Virtual nodes keep the spread even\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 32,
+  "file": "32_Read_Replicas_Read_Write_Splitting.mp4",
+  "when": "2027-01-06T13:30:00.000Z",
+  "caption": "System Design #32: Read Replicas & Read/Write Splitting\n\nScaling a read-heavy database.\n\n• Writes to the primary, reads to replicas\n• Scales reads almost linearly\n• Replication lag → stale reads\n• Write-heavy? Shard instead\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 33,
+  "file": "33_Key_Value_Stores.mp4",
+  "when": "2027-01-08T13:30:00.000Z",
+  "caption": "System Design #33: Key-Value Stores\n\nThe simplest, fastest database model.\n\n• Get/put by key: simple and fast\n• Partition by hash to scale out\n• No rich queries: design keys carefully\n• Redis data structures go far beyond caching\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 34,
+  "file": "34_Wide_Column_Stores.mp4",
+  "when": "2027-01-10T13:30:00.000Z",
+  "caption": "System Design #34: Wide-Column Stores\n\nBuilt for massive write throughput.\n\n• Partition key → node; clustering key → order\n• Masterless, replicated, write-optimized\n• Design tables around queries\n• Avoid unbounded partitions\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 35,
+  "file": "35_Document_Databases.mp4",
+  "when": "2027-01-12T13:30:00.000Z",
+  "caption": "System Design #35: Document Databases\n\nStore data the way your app uses it.\n\n• Documents match how apps read data\n• Embed what you read together\n• Reference what grows unbounded\n• Index the fields you query\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 36,
+  "file": "36_Graph_Databases.mp4",
+  "when": "2027-01-14T13:30:00.000Z",
+  "caption": "System Design #36: Graph Databases\n\nWhen the relationships are the data.\n\n• Nodes, relationships, properties\n• Traversals follow pointers, not joins\n• Shines on connected, deep queries\n• Use other stores for bulk analytics\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 37,
+  "file": "37_Time_Series_Databases.mp4",
+  "when": "2027-01-16T13:30:00.000Z",
+  "caption": "System Design #37: Time-Series Databases\n\nBuilt for metrics, sensors and events over time.\n\n• Append-heavy, time-ordered data\n• Compression + downsampling + retention\n• Fast range and aggregate queries\n• Watch tag cardinality\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 38,
+  "file": "38_Object_Storage.mp4",
+  "when": "2027-01-18T13:30:00.000Z",
+  "caption": "System Design #38: Object Storage\n\nWhere the internet keeps its files.\n\n• Flat namespace of keys, HTTP API\n• Cheap, durable, nearly infinite\n• Presigned URLs for direct upload/download\n• Not for low-latency random writes\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 39,
+  "file": "39_Distributed_File_Systems.mp4",
+  "when": "2027-01-20T13:30:00.000Z",
+  "caption": "System Design #39: Distributed File Systems\n\nOne giant filesystem across thousands of disks.\n\n• Files → big blocks → many machines\n• Replicated 3× for durability\n• Metadata server + data servers\n• In the cloud, object storage mostly took over\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 40,
+  "file": "40_Data_Lake_vs_Warehouse_vs_Lakehouse.mp4",
+  "when": "2027-01-22T13:30:00.000Z",
+  "caption": "System Design #40: Data Lake vs Warehouse vs Lakehouse\n\nWhere your analytics data should live.\n\n• Warehouse: clean, structured, fast SQL\n• Lake: raw, cheap, flexible\n• Lakehouse: both, via open table formats\n• Govern your lake or it becomes a swamp\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 41,
+  "file": "41_Connection_Pooling.mp4",
+  "when": "2027-01-24T13:30:00.000Z",
+  "caption": "System Design #41: Connection Pooling\n\nStop paying for a new handshake on every request.\n\n• Reuse connections instead of reconnecting\n• Small, well-sized pools beat huge ones\n• Use a shared pooler for many clients\n• Serverless functions especially need one\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 42,
+  "file": "42_Transaction_Isolation_Levels.mp4",
+  "when": "2027-01-26T13:30:00.000Z",
+  "caption": "System Design #42: Transaction Isolation Levels\n\nWhat concurrent transactions are allowed to see.\n\n• Higher isolation = fewer anomalies, less concurrency\n• Most DBs default to read committed\n• Defaults don’t prevent lost updates\n• Use atomic updates, locks or SERIALIZABLE\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 43,
+  "file": "43_Caching_Layers.mp4",
+  "when": "2027-01-28T13:30:00.000Z",
+  "caption": "System Design #43: Caching Layers\n\nEvery place a response can be served faster.\n\n• Cache at every layer, closest to the user first\n• Hit ratio drives average latency\n• Cache read-heavy, slow-changing data\n• Freshness is the price you pay\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 44,
+  "file": "44_Cache_Write_Strategies.mp4",
+  "when": "2027-01-30T13:30:00.000Z",
+  "caption": "System Design #44: Cache Write Strategies\n\nCache-aside, write-through, write-back, write-around.\n\n• Cache-aside: the sensible default\n• Write-through: fresh, slower writes\n• Write-back: fast, risk of loss\n• Write-around: don’t cache what isn’t re-read\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 45,
+  "file": "45_Cache_Eviction_LRU_LFU_TTL.mp4",
+  "when": "2027-02-01T13:30:00.000Z",
+  "caption": "System Design #45: Cache Eviction: LRU, LFU, TTL\n\nDeciding what to throw out when memory is full.\n\n• LRU: simple, recency-based default\n• LFU: protects long-term favorites\n• TTL: bounds staleness, not size\n• Modern caches blend recency + frequency\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 46,
+  "file": "46_Cache_Invalidation.mp4",
+  "when": "2027-02-03T13:30:00.000Z",
+  "caption": "System Design #46: Cache Invalidation\n\nKeeping cached copies from going stale.\n\n• TTL on everything\n• Delete on write (cache-aside)\n• CDC makes invalidation automatic\n• Races exist: use leases or versions\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 47,
+  "file": "47_Cache_Stampede.mp4",
+  "when": "2027-02-05T13:30:00.000Z",
+  "caption": "System Design #47: Cache Stampede\n\nWhen one expiring key takes down your database.\n\n• Hot key expiry → herd of identical misses\n• Single-flight / locks: one recompute\n• Serve stale while refreshing\n• Jitter TTLs; pre-warm before peaks\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 48,
+  "file": "48_Distributed_Caching.mp4",
+  "when": "2027-02-07T13:30:00.000Z",
+  "caption": "System Design #48: Distributed Caching\n\nScaling a cache beyond one machine.\n\n• Shard keys across nodes by hash\n• Replicate each shard for failover\n• L1 local + L2 shared = fast and scalable\n• Design keys for co-location\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 49,
+  "file": "49_Hot_Keys.mp4",
+  "when": "2027-02-09T13:30:00.000Z",
+  "caption": "System Design #49: Hot Keys\n\nWhen one key gets more traffic than a whole shard can take.\n\n• Hashing can’t spread one key\n• Reads: replicate the key + local caches\n• Writes: shard the counter\n• Detect hot keys before they melt a shard\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 50,
+  "file": "50_Message_Queues.mp4",
+  "when": "2027-02-11T13:30:00.000Z",
+  "caption": "System Design #50: Message Queues\n\nDecouple services and absorb traffic spikes.\n\n• Producers and consumers are decoupled\n• Spikes become backlogs, not outages\n• Scale workers to match the queue\n• Design for retries and duplicates\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 51,
+  "file": "51_Pub_Sub.mp4",
+  "when": "2027-02-13T13:30:00.000Z",
+  "caption": "System Design #51: Pub/Sub\n\nBroadcast events to everyone who cares.\n\n• One event → many independent reactions\n• Publishers don’t know subscribers\n• Topic + queue per service = durable fan-out\n• Events are contracts: version them\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 52,
+  "file": "52_Event_Streaming_with_Kafka.mp4",
+  "when": "2027-02-15T13:30:00.000Z",
+  "caption": "System Design #52: Event Streaming with Kafka\n\nThe distributed log behind real-time data.\n\n• A replayable, partitioned, replicated log\n• Ordering per partition, parallelism across them\n• Consumer groups read independently\n• Use keys to keep related events ordered\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 53,
+  "file": "53_Delivery_Guarantees.mp4",
+  "when": "2027-02-17T13:30:00.000Z",
+  "caption": "System Design #53: Delivery Guarantees\n\nAt-most-once, at-least-once, exactly-once.\n\n• At-most-once: may lose\n• At-least-once: may duplicate\n• “Exactly-once” = at-least-once + idempotency\n• Default to at-least-once, make consumers idempotent\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 54,
+  "file": "54_Idempotency.mp4",
+  "when": "2027-02-19T13:30:00.000Z",
+  "caption": "System Design #54: Idempotency\n\nMaking retries safe.\n\n• Retries are inevitable: make them safe\n• Idempotency keys for client requests\n• Unique constraints and dedupe tables\n• Prefer “set” over “increment”\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 55,
+  "file": "55_Dead_Letter_Queues.mp4",
+  "when": "2027-02-21T13:30:00.000Z",
+  "caption": "System Design #55: Dead Letter Queues\n\nWhere poison messages go instead of blocking everything.\n\n• Poison messages must not block the queue\n• Max attempts → dead letter queue\n• Alert, inspect, fix, redrive\n• Retry transient errors, dead-letter permanent ones\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 56,
+  "file": "56_Backpressure.mp4",
+  "when": "2027-02-23T13:30:00.000Z",
+  "caption": "System Design #56: Backpressure\n\nWhat to do when work arrives faster than you can handle it.\n\n• Mismatched rates must be handled explicitly\n• Options: buffer, drop, slow down, scale\n• Backpressure signals travel upstream\n• Unbounded buffers are delayed crashes\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 57,
+  "file": "57_Batch_vs_Stream_Processing.mp4",
+  "when": "2027-02-25T13:30:00.000Z",
+  "caption": "System Design #57: Batch vs Stream Processing\n\nProcess data later in bulk, or the moment it arrives?.\n\n• Batch: simple, efficient, delayed\n• Stream: immediate, stateful, trickier\n• Windows & watermarks tame unbounded data\n• Many teams now default to streaming + replay\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 58,
+  "file": "58_Consensus_Raft_Paxos.mp4",
+  "when": "2027-02-27T13:30:00.000Z",
+  "caption": "System Design #58: Consensus: Raft & Paxos\n\nHow machines agree when some of them fail.\n\n• Consensus = agreement despite failures\n• Raft: leader, log replication, elections\n• Majority quorum: 2f + 1 nodes\n• Use etcd/ZooKeeper; don’t write your own\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 59,
+  "file": "59_Leader_Election.mp4",
+  "when": "2027-03-01T13:30:00.000Z",
+  "caption": "System Design #59: Leader Election\n\nMaking sure exactly one node is in charge.\n\n• Leases: hold leadership only while alive\n• Use a consensus service, not homegrown code\n• Assume a leader can pause and come back\n• Fencing tokens make that safe\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 60,
+  "file": "60_Two_Phase_Commit.mp4",
+  "when": "2027-03-03T13:30:00.000Z",
+  "caption": "System Design #60: Two-Phase Commit\n\nAll-or-nothing across multiple databases.\n\n• Prepare (vote) → commit or abort\n• Gives atomicity across resources\n• Blocking, slow, coordinator-dependent\n• Microservices usually prefer sagas\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 61,
+  "file": "61_The_Saga_Pattern.mp4",
+  "when": "2027-03-05T13:30:00.000Z",
+  "caption": "System Design #61: The Saga Pattern\n\nLong transactions as a chain of undoable steps.\n\n• Local transactions + compensations\n• Choreography or orchestration\n• Eventual consistency, no isolation\n• Idempotent steps, persisted state\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 62,
+  "file": "62_Event_Sourcing.mp4",
+  "when": "2027-03-07T13:30:00.000Z",
+  "caption": "System Design #62: Event Sourcing\n\nStore what happened, derive what is.\n\n• Events are the source of truth\n• State is a fold over events\n• Audit, time travel and new views for free\n• Plan for schema evolution and snapshots\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 63,
+  "file": "63_CQRS.mp4",
+  "when": "2027-03-09T13:30:00.000Z",
+  "caption": "System Design #63: CQRS\n\nSeparate models for writing and reading.\n\n• Commands and queries use different models\n• Read models are optimized per use case\n• Expect lag between write and read side\n• Don’t use it for simple CRUD apps\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 64,
+  "file": "64_Distributed_Locks.mp4",
+  "when": "2027-03-11T13:30:00.000Z",
+  "caption": "System Design #64: Distributed Locks\n\nMutual exclusion across many machines.\n\n• SET NX PX: acquire with expiry\n• Token check on release\n• Pauses and expiry break naive locks\n• Fence writes with increasing tokens\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 65,
+  "file": "65_Clocks_Logical_Vector.mp4",
+  "when": "2027-03-13T13:30:00.000Z",
+  "caption": "System Design #65: Clocks: Logical & Vector\n\nOrdering events when wall clocks can’t be trusted.\n\n• Don’t order distributed events by wall clock alone\n• Lamport clocks: cheap causal ordering\n• Vector clocks: detect concurrent writes\n• Spanner’s TrueTime waits out its uncertainty\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 66,
+  "file": "66_Unique_ID_Generation.mp4",
+  "when": "2027-03-15T13:30:00.000Z",
+  "caption": "System Design #66: Unique ID Generation\n\nBillions of IDs, no collisions, no bottleneck.\n\n• Avoid a central counter at scale\n• Snowflake: time + machine + sequence\n• UUIDv7: a time-sortable standard UUID\n• Handle clock skew explicitly\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 67,
+  "file": "67_Gossip_Protocols.mp4",
+  "when": "2027-03-17T13:30:00.000Z",
+  "caption": "System Design #67: Gossip Protocols\n\nSpreading information like a rumor.\n\n• Random peer-to-peer exchanges\n• Reaches everyone in ~log N rounds\n• Powers membership and failure detection\n• Fast enough, not instant\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 68,
+  "file": "68_Quorum_Reads_Writes.mp4",
+  "when": "2027-03-19T13:30:00.000Z",
+  "caption": "System Design #68: Quorum Reads & Writes\n\nTuning consistency with R + W > N.\n\n• R + W > N → reads see the latest write\n• Tune W and R for speed vs safety\n• Majority quorums tolerate minority failures\n• Watch for sloppy quorums\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 69,
+  "file": "69_Bloom_Filters.mp4",
+  "when": "2027-03-21T13:30:00.000Z",
+  "caption": "System Design #69: Bloom Filters\n\n“Definitely not” or “probably yes”, in a few bits.\n\n• Bit array + k hash functions\n• “No” is certain; “yes” is probable\n• ~10 bits per item for 1% error\n• Great as a cheap pre-check before expensive lookups\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 70,
+  "file": "70_Merkle_Trees.mp4",
+  "when": "2027-03-23T13:30:00.000Z",
+  "caption": "System Design #70: Merkle Trees\n\nFind differences in huge datasets by comparing hashes.\n\n• Hashes of hashes, up to one root\n• Find differences in O(log n) steps\n• Detect tampering and prove inclusion\n• Behind repair, Git and blockchains\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 71,
+  "file": "71_Rate_Limiting_Algorithms.mp4",
+  "when": "2027-03-25T13:30:00.000Z",
+  "caption": "System Design #71: Rate Limiting Algorithms\n\nToken bucket, leaky bucket and sliding windows, explained.\n\n• Limits protect fairness, cost and uptime\n• Token bucket: average rate + burst capacity\n• Sliding window avoids edge spikes\n• Enforce at the edge, store counters in Redis\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 72,
+  "file": "72_Circuit_Breakers.mp4",
+  "when": "2027-03-27T13:30:00.000Z",
+  "caption": "System Design #72: Circuit Breakers\n\nStop calling a service that is already down.\n\n• Closed → Open → Half-open → Closed\n• Fail fast instead of waiting on timeouts\n• Gives failing services room to recover\n• Pair with fallbacks and alerts\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 73,
+  "file": "73_Retries_Backoff_Jitter.mp4",
+  "when": "2027-03-29T13:30:00.000Z",
+  "caption": "System Design #73: Retries, Backoff & Jitter\n\nHow to retry without making an outage worse.\n\n• Retry transient failures, not bad requests\n• Back off exponentially, with a cap\n• Add jitter to break up waves\n• Retry only idempotent work, at one layer\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 74,
+  "file": "74_Timeouts_Bulkheads.mp4",
+  "when": "2027-03-31T13:30:00.000Z",
+  "caption": "System Design #74: Timeouts & Bulkheads\n\nContain failures so one slow dependency can’t sink the ship.\n\n• Every remote call gets a timeout\n• Base timeouts on measured latency\n• Bulkheads isolate pools per dependency\n• A slow service should never sink the ship\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 75,
+  "file": "75_Graceful_Degradation.mp4",
+  "when": "2027-04-02T13:30:00.000Z",
+  "caption": "System Design #75: Graceful Degradation\n\nKeep the core working when parts of the system fail.\n\n• Separate critical from optional features\n• Every optional dependency has a fallback\n• Prefer stale or partial data over errors\n• Test failure modes before users find them\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 76,
+  "file": "76_Health_Checks_Heartbeats.mp4",
+  "when": "2027-04-04T13:30:00.000Z",
+  "caption": "System Design #76: Health Checks & Heartbeats\n\nHow systems know which machines are alive.\n\n• Health checks: someone asks; heartbeats: node tells\n• Liveness restarts, readiness routes\n• Deep checks can cause cascading outages\n• Use thresholds to avoid false alarms\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 77,
+  "file": "77_Disaster_Recovery_RPO_RTO.mp4",
+  "when": "2027-04-06T13:30:00.000Z",
+  "caption": "System Design #77: Disaster Recovery: RPO & RTO\n\nHow much data can you lose, and how long can you be down?.\n\n• RPO = data you can lose\n• RTO = time you can be down\n• Lower numbers cost more money\n• A backup you haven’t restored isn’t a backup\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 78,
+  "file": "78_Multi_Region_Active_Active.mp4",
+  "when": "2027-04-08T13:30:00.000Z",
+  "caption": "System Design #78: Multi-Region & Active-Active\n\nServing users from more than one part of the world.\n\n• Multi-region cuts latency and survives outages\n• Active-passive: simpler, failover takes time\n• Active-active: all regions serve, conflicts appear\n• Partition writes by user’s home region when you can\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 79,
+  "file": "79_Chaos_Engineering.mp4",
+  "when": "2027-04-10T13:30:00.000Z",
+  "caption": "System Design #79: Chaos Engineering\n\nBreak things on purpose so they don’t break by surprise.\n\n• Inject failure deliberately, in a controlled way\n• Hypothesis → experiment → observe\n• Start small, keep an abort switch\n• Find weaknesses before your users do\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 80,
+  "file": "80_Authentication_vs_Authorization.mp4",
+  "when": "2027-04-12T13:30:00.000Z",
+  "caption": "System Design #80: Authentication vs Authorization\n\nWho are you, and what are you allowed to do?.\n\n• Authentication = identity\n• Authorization = permissions\n• 401 = who are you? 403 = not allowed\n• Enforce authorization on every request, server-side\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 81,
+  "file": "81_OAuth_2_0_OIDC_JWT.mp4",
+  "when": "2027-04-14T13:30:00.000Z",
+  "caption": "System Design #81: OAuth 2.0, OIDC & JWT\n\n“Log in with Google”, explained step by step.\n\n• OAuth = delegated access via scopes\n• OIDC = identity on top of OAuth\n• JWT = signed, readable token format\n• Auth code flow + PKCE is the modern default\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 82,
+  "file": "82_Encryption_at_Rest_in_Transit.mp4",
+  "when": "2027-04-16T13:30:00.000Z",
+  "caption": "System Design #82: Encryption at Rest & in Transit\n\nProtecting data on the wire and on the disk.\n\n• In transit: TLS 1.3, HSTS, mTLS inside\n• At rest: AES-256 with keys in a KMS\n• Envelope encryption makes rotation easy\n• Encryption is one layer, not the whole defense\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 83,
+  "file": "83_API_Security_DDoS_Protection.mp4",
+  "when": "2027-04-18T13:30:00.000Z",
+  "caption": "System Design #83: API Security & DDoS Protection\n\nDefending public endpoints from abuse and floods.\n\n• Auth on every call, ownership on every object\n• Validate inputs, return minimal data\n• DDoS: absorb at the edge, filter in layers\n• Rate limits protect both security and uptime\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 84,
+  "file": "84_Secrets_Management.mp4",
+  "when": "2027-04-20T13:30:00.000Z",
+  "caption": "System Design #84: Secrets Management\n\nWhere your passwords and API keys should really live.\n\n• Never store secrets in code or images\n• Fetch them at runtime from a secrets manager\n• Prefer short-lived, dynamic credentials\n• Leaked? Rotate first, investigate second\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 85,
+  "file": "85_Logs_Metrics_Traces.mp4",
+  "when": "2027-04-22T13:30:00.000Z",
+  "caption": "System Design #85: Logs, Metrics & Traces\n\nThe three pillars of observability.\n\n• Metrics: what’s wrong (cheap, aggregated)\n• Traces: where it’s wrong\n• Logs: why it’s wrong\n• Link them with a shared trace ID\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 86,
+  "file": "86_Distributed_Tracing.mp4",
+  "when": "2027-04-24T13:30:00.000Z",
+  "caption": "System Design #86: Distributed Tracing\n\nFollow one request through dozens of services.\n\n• A trace = tree of spans for one request\n• Propagate context in headers on every call\n• Waterfalls reveal the slow hop instantly\n• Use OpenTelemetry; sample smartly\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 87,
+  "file": "87_Monitoring_Alerting.mp4",
+  "when": "2027-04-26T13:30:00.000Z",
+  "caption": "System Design #87: Monitoring & Alerting\n\nGet paged for real problems, not noise.\n\n• Page on user-facing symptoms\n• Define SLOs and track error budgets\n• Alert on burn rate, not single spikes\n• Every page should be actionable\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 88,
+  "file": "88_Deployment_Strategies.mp4",
+  "when": "2027-04-28T13:30:00.000Z",
+  "caption": "System Design #88: Deployment Strategies\n\nRolling, blue-green and canary releases.\n\n• Rolling: gradual, cheap, mixed versions\n• Blue-green: instant switch & rollback\n• Canary: real traffic, tiny blast radius\n• Separate deploy from release with flags\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 89,
+  "file": "89_Autoscaling_Capacity_Planning.mp4",
+  "when": "2027-04-30T13:30:00.000Z",
+  "caption": "System Design #89: Autoscaling & Capacity Planning\n\nRight-size for today’s traffic and next year’s.\n\n• Autoscale to follow demand, cut cost\n• Choose metrics that reflect real load\n• Keep headroom for slow startups & failures\n• Plan capacity with load tests + forecasts\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 90,
+  "file": "90_Design_a_URL_Shortener.mp4",
+  "when": "2027-05-02T13:30:00.000Z",
+  "caption": "System Design #90: Design a URL Shortener\n\nThe classic interview question, solved end to end.\n\n• 7 Base62 chars ≈ 3.5 trillion codes\n• Unique IDs avoid hash collisions\n• Read-heavy: cache + KV store + CDN\n• 301 saves load, 302 keeps analytics\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 91,
+  "file": "91_Design_a_Rate_Limiter.mp4",
+  "when": "2027-05-04T13:30:00.000Z",
+  "caption": "System Design #91: Design a Rate Limiter\n\nA distributed limiter for millions of API clients.\n\n• Enforce at the gateway, before your code\n• Shared counters in Redis, updated atomically\n• Sliding window or token bucket per key\n• Fail open and keep latency tiny\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 92,
+  "file": "92_Design_a_Chat_System.mp4",
+  "when": "2027-05-06T13:30:00.000Z",
+  "caption": "System Design #92: Design a Chat System\n\nWhatsApp-style 1:1 and group messaging.\n\n• WebSockets for real-time, two-way delivery\n• Persist first, then deliver; ack with ticks\n• Session registry routes between servers\n• Offline: inbox + push, sync by sequence number\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 93,
+  "file": "93_Design_a_News_Feed.mp4",
+  "when": "2027-05-08T13:30:00.000Z",
+  "caption": "System Design #93: Design a News Feed\n\nHow Twitter/Instagram build your timeline.\n\n• Push: fast reads, expensive writes\n• Pull: cheap writes, slow reads\n• Hybrid: push for most, pull for celebrities\n• Cache post IDs, hydrate & rank on read\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 94,
+  "file": "94_Design_a_Video_Streaming_Platform.mp4",
+  "when": "2027-05-10T13:30:00.000Z",
+  "caption": "System Design #94: Design a Video Streaming Platform\n\nYouTube/Netflix: upload, transcode, stream worldwide.\n\n• Upload to object storage, transcode in parallel\n• Many renditions × short segments\n• Adaptive bitrate via HLS/DASH\n• CDNs (even inside ISPs) do the heavy lifting\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 95,
+  "file": "95_Design_a_Ride_Sharing_Service.mp4",
+  "when": "2027-05-12T13:30:00.000Z",
+  "caption": "System Design #95: Design a Ride-Sharing Service\n\nUber-style matching of riders and drivers in real time.\n\n• Index the map with geohash / H3 cells\n• Locations live in memory, sharded by region\n• Match by ETA, offer, then lock atomically\n• Events via Kafka; trips in a durable DB\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 96,
+  "file": "96_Design_a_Web_Crawler.mp4",
+  "when": "2027-05-14T13:30:00.000Z",
+  "caption": "System Design #96: Design a Web Crawler\n\nDownload billions of pages politely and efficiently.\n\n• Frontier → fetch → store → parse → dedup\n• Priority queues + per-host politeness\n• Bloom filters for seen URLs, hashes for content\n• Guard against traps; re-crawl by change rate\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 97,
+  "file": "97_Design_a_Notification_System.mp4",
+  "when": "2027-05-16T13:30:00.000Z",
+  "caption": "System Design #97: Design a Notification System\n\nPush, SMS and email at scale, reliably.\n\n• One API, per-channel queues and workers\n• Prefs, templates & rate limits up front\n• Idempotency + retries + DLQ for reliability\n• Prioritize critical messages; throttle marketing\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 98,
+  "file": "98_Design_a_Distributed_Key_Value_Store.mp4",
+  "when": "2027-05-18T13:30:00.000Z",
+  "caption": "System Design #98: Design a Distributed Key-Value Store\n\nBuild your own Dynamo: partitioning, replication, repair.\n\n• Consistent hashing + N replicas\n• Quorums (R + W > N) tune consistency\n• Hinted handoff, read repair, Merkle repair\n• LSM-tree storage for fast writes\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 99,
+  "file": "99_Design_Search_Autocomplete.mp4",
+  "when": "2027-05-20T13:30:00.000Z",
+  "caption": "System Design #99: Design Search Autocomplete\n\nTypeahead suggestions in milliseconds.\n\n• Trie with top-k cached at every node\n• Online path is read-only and in memory\n• Offline jobs aggregate logs & rebuild\n• Debounce, cache and shard for scale\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ },
+ {
+  "n": 100,
+  "file": "100_Design_a_Payment_System.mp4",
+  "when": "2027-05-22T13:30:00.000Z",
+  "caption": "System Design #100: Design a Payment System\n\nMoving money correctly: never twice, never lost.\n\n• Idempotency keys on every money movement\n• Explicit state machine, including UNKNOWN\n• Double-entry, append-only ledger\n• Reconcile daily; tokenize card data\n\nTake the quiz in the video, then save this for your next interview.\n\n#systemdesign #softwareengineering #backend #codinginterview #distributedsystems #programming #techreels"
+ }
+]
